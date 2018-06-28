@@ -11,7 +11,7 @@ The system use variouse information retreival techniques:
 
 In order to run the project on your computer, you have to install a Java developing environement, such as Intelj Idea. 
 After downloading the project, you should make sure you add the needed libraries to the project (Lucene libraries and Gson library). 
-In addition, you have to add the json file of the Webscope L6 dataset to the project directory. 
+In addition, you have to add the json file of the Webscope L6 dataset, and the answerbag dataset text files (questions and answers) to the project directory. 
 
 ## The Classes
 
