@@ -1,11 +1,11 @@
-# Information Retreival Project - H&S
+# Information Retreival Project - H&L
 
 This is an Information Retreival system, for the Non-Factoid Passage Retreival task.
 It retreives the top-5 answers for questions in natural language, taken from the Yahoo WebScope L6 dataset.
 The system use variouse information retreival techniques:
-1. Similarities: BM25 Similarity, Pivot-Lenght Similarity, Dirichlet Similarity
-2. All combined using a Fusion Ranking Formula - CombMNZ.
-3. Query Expansion using a relations dictionary we built, using another dataset.
+1. **Similarities**: BM25 Similarity, Pivot-Lenght Similarity, Dirichlet Similarity
+2. All combined using a Fusion Ranking Formula - **CombMNZ**.
+3. **Query Expansion** using a relations dictionary we built, using another dataset.
 
 ## Getting Started
 
@@ -15,11 +15,11 @@ After downloading the project, you should make sure you add the needed libraries
 ## The Classes
 
 The project's important classes:
-1. Indexer - indexes the documents (all of the questions answers) according to a given similarity.
-2. Similarities: OurBM25Similarity, OurPLenghtSimilarity - those classes compute the score of one term in the answer, regarding to the question, according to the BM25 formula and the Pivot Document Lenght formula, respectively. 
-3. Searcher - searches answers for a given question, according to a specific similarity.
-4. RelationsDictionary - a class for building the data structure of the relations dictionary, and filling it with relations between word (using the 'answerbag' dataset)
-5. FusionRanker - gets some sets of scored documents and re-ranks them according to a fusion ranking formula (ComnMNZ or RRF, we found CombMNZ as better for the results).
+1. **Indexer** - indexes the documents (all of the questions answers) according to a given similarity.
+2. **Similarities**: OurBM25Similarity, OurPLenghtSimilarity - those classes compute the score of one term in the answer, regarding to the question, according to the BM25 formula and the Pivot Document Lenght formula, respectively. 
+3. **Searcher** - searches answers for a given question, according to a specific similarity.
+4. **RelationsDictionary** - a class for building the data structure of the relations dictionary, and filling it with relations between word (using the 'answerbag' dataset).
+5. **FusionRanker** - gets some sets of scored documents and re-ranks them according to a fusion ranking formula (ComnMNZ or RRF, we found CombMNZ as better for the results).
 
 ## Running the tests
 
