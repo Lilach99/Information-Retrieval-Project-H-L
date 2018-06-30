@@ -40,10 +40,6 @@ Percision@1: 0.263
 MRR@5: 0.329
 ```
 
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-
 ## Authors
 
 * **Lilach Saban** - *Student at Haifa University* 
